@@ -1,0 +1,12 @@
+kind: SecureCNPolicy
+apiVersion: securecn.io/v1beta1
+metadata:
+  name: tomcat
+spec:
+  deploymentName: tomcat
+  to:
+    internal: [db]
+    external: false
+  from:
+    internal: []
+    external: true
