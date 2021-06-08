@@ -1,9 +1,9 @@
 kind: SecureCNPolicy
 apiVersion: securecn.io/v1beta1
 metadata:
-  name: tomcat
+  name: nginx
 spec:
-  deploymentName: tomcat
+  deploymentName: nginx
   to:
     internal: [db]
     external: false
